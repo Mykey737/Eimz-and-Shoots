@@ -116,6 +116,11 @@ body {
     font-size: .75rem;
 }
 
+.home-gallery-tile button a { 
+    text-decoration: none;
+    color: var(--maincolor2);
+}
+
 /* FOOTER STYLES */
 
 footer {
@@ -174,7 +179,7 @@ footer a {
     gap: 16px;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 9rem 10px;
   }
   
   .gallery img {

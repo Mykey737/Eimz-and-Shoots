@@ -5,16 +5,24 @@
     --maincolor4: lightblue;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 /* NAVBAR STYLES */
 
 #navbar {
     height: 8rem;
+    position: fixed;
+    top: 0;
+    background-color: var(--maincolor1);
+    width: 100%;
 }
 
 #navbar h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    padding-top: 1.5rem;
 }
-
 
 #navbar li {
     list-style: none;
@@ -24,13 +32,15 @@
 #navbar a {
     text-decoration: none;
     padding: .35rem;
-    font-size: 1.1rem
+    font-size: 1.3rem;
+    color: var(--maincolor2);
 }
 
 #logo, #nav {
     width: 100%;
     text-align: center;
     margin: auto;
+    padding-bottom: 1rem;
 }
 
 #menu, #social-links, #social-links ul {
@@ -49,7 +59,7 @@
     gap: 2rem;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 9rem 10px;
 }
 
 .hero-gallery img {
@@ -60,19 +70,97 @@
     border-radius: 10px;
 }
 
+/* HOME GALLERY STYLES */
+
+#home-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+#home-gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.home-gallery-tile {
+    display: inline;
+    padding: 1rem;
+    width: 350px;
+    padding-top: 0;
+}
+
+.home-gallery-tile h2 {
+    margin-top: 0;
+}
+
+.bottom {
+    padding-top: 1rem !important;
+}
+
+.top {
+    padding-bottom: 1rem;
+}
+
+.home-gallery-tile button {
+    background-color: transparent;
+    height: 2.5rem;
+    font-size: .75rem;
+}
+
 /* FOOTER STYLES */
 
+footer {
+    padding: 0;
+}
+
+footer hr {
+    height: 2px;
+    background-color: var(--maincolor2);
+    margin-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--maincolor2);
+}
+
 #contact-info {
-    border: 1px solid green;
+    display: inline-block;
+    font-size: 1.25rem;
+    width: 24%;
+}
+
+.contact-link {
+    padding: .75rem;
+}
+
+#spacer {
+    display: inline-block;
+    width: 49%
 }
 
 #reviews {
-    border: 1px solid yellow;
+    display: inline-block;
+    margin: auto;
+    font-size: 1.25rem;
+    width: 24%;
+    text-align: right;
 }
 
 #copyright-info {
     width: 100%;
-    border: 1px solid purple;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1rem;
 }
 
 /* GALLERY STYLES */
